@@ -12,6 +12,10 @@ public class Not_gate extends Gate {
         input = new Wire();
     }
 
+    public Not_gate(Boolean signal) {
+        input = new Wire(signal);
+    }
+
     public boolean isInput() {
         return input.getSignal();
     }
@@ -25,6 +29,6 @@ public class Not_gate extends Gate {
     }
 
     public String toString() {
-        return Boolean.toString(this.output);
+        return Boolean.toString(this.output.getSignal());
     }
 }

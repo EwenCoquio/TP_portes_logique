@@ -5,6 +5,10 @@ import wires.Wire;
 public class Or_gate extends Gate_2_input {
     public Or_gate() {
     }
+    public Or_gate(Boolean i1, Boolean i2) {
+        input1 = new Wire(i1);
+        input2 = new Wire(i2);
+    }
 
     @Override
     public void activate() {
