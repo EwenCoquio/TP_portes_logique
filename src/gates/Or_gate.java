@@ -1,10 +1,14 @@
+package gates;
+
+import wires.Wire;
+
 public class Or_gate extends Gate_2_input {
-    Or_gate() {
+    public Or_gate() {
     }
 
     @Override
     public void activate() {
-        this.output = this.input1 | this.input2;
+        this.output.setSignal(this.input1.getSignal() || this.input2.getSignal());
     }
 
     @Override

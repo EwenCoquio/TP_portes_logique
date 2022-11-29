@@ -1,3 +1,5 @@
+package gates;
+
 import java.util.Scanner;
 
 public class Application_not {
@@ -6,7 +8,7 @@ public class Application_not {
         Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez choisir l'entree : true ou false");
         boolean in = sc.nextBoolean();
-        p.setInput(in);
+        //p.setInput(in);
         p.activate();
         return p;
     }

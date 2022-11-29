@@ -1,9 +1,15 @@
+package gates;
+
+import wires.Wire;
+
 public  class And_gate extends Gate_2_input{
-    And_gate() {
+
+    public And_gate() {
     }
     @Override
     public void activate(){
-        this.output = this.input1 & this.input2;
+        this.output.setSignal(this.input1.getSignal() && this.input2.getSignal());
+
     }
 
     @Override

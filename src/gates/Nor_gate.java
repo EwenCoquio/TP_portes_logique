@@ -1,10 +1,13 @@
-public class Nand_gate extends Gate_2_input {
-    Nand_gate() {
+package gates;
+
+public class Nor_gate extends Gate_2_input {
+    public Nor_gate() {
+
     }
 
     @Override
     public void activate() {
-        this.output = !(this.input1 & this.input2);
+        this.output.setSignal(!(this.input1.getSignal() | this.input2.getSignal()));
     }
 
     @Override

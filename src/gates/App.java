@@ -1,3 +1,5 @@
+package gates;
+
 import java.util.Scanner;
 
 public class App {
@@ -17,43 +19,46 @@ public class App {
                     System.out.println("Veuillez choisir les entrees : true ou false");
                     in1 = sc.nextBoolean();
                     in2 = sc.nextBoolean();
-                    p.setInput1(in1);
-                    p.setInput2(in2);
+                   // p.setInput1(in1);
+                    //p.setInput2(in2);
                     p.activate();
-                    System.out.println(p.toString());
+                    System.out.println(p);
                     break;
                 case 2:
                     p = new Or_gate();
                     System.out.println("Veuillez choisir les entrees : true ou false");
                     in1 = sc.nextBoolean();
                     in2 = sc.nextBoolean();
-                    p.setInput1(in1);
-                    p.setInput2(in2);
+                    //p.setInput1(in1);
+                  //  p.setInput2(in2);
                     p.activate();
-                    System.out.println(p.toString());
+                    System.out.println(p);
                     break;
                 case 3:
                     p = new Nand_gate();
                     System.out.println("Veuillez choisir les entrees : true ou false");
                     in1 = sc.nextBoolean();
                     in2 = sc.nextBoolean();
-                    p.setInput1(in1);
-                    p.setInput2(in2);
+                    //p.setInput1(in1);
+                    //p.setInput2(in2);
                     p.activate();
-                    System.out.println(p.toString());
+                    System.out.println(p);
                     break;
                 case 4:
                     p = new Nor_gate();
                     System.out.println("Veuillez choisir les entrees : true ou false");
                     in1 = sc.nextBoolean();
                     in2 = sc.nextBoolean();
-                    p.setInput1(in1);
-                    p.setInput2(in2);
+                   // p.setInput1(in1);
+                   // p.setInput2(in2);
                     p.activate();
-                    System.out.println(p.toString());
+                    System.out.println(p);
                     break;
             }
         }
         return p;
+    }
+    private static void ask(){
+        //todo
     }
 }
